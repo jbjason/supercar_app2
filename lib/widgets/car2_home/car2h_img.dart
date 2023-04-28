@@ -12,6 +12,7 @@ class Car2hImg extends StatelessWidget {
     final selectedImg = ValueNotifier<int>(0);
 
     return Stack(
+      clipBehavior: Clip.none,
       children: [
         // imgs
         Positioned(

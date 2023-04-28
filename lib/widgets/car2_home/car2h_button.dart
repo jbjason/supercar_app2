@@ -11,13 +11,12 @@ class Car2hButton extends StatelessWidget {
     return Align(
       alignment: Alignment.centerRight,
       child: Container(
-        height: 70,
+        height: 67,
         width: size.width * .4,
         alignment: Alignment.center,
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(80),
-            bottomRight: Radius.circular(50),
           ),
           gradient: LinearGradient(
             begin: Alignment.topLeft,

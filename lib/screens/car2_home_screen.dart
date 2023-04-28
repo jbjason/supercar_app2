@@ -18,12 +18,17 @@ class Car2HomeScreen extends StatelessWidget {
           getBackColorWidget(),
           SafeArea(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 // nineBot text & green arrowLines
                 Car2hAppbar(size: size),
                 const SizedBox(height: 20),
                 // Gokart-Pro text & subtitle
                 _gokartText(),
+                const Text(
+                  'Upped The Game',
+                  style: TextStyle(fontSize: 12, color: Colors.grey),
+                ),
                 // Go-kart text & img
                 const Expanded(child: Car2hImg()),
                 Car2hButton(size: size),
@@ -42,13 +47,9 @@ class Car2HomeScreen extends StatelessWidget {
               fontSize: 40, fontWeight: FontWeight.bold, color: Colors.white),
           children: [
             TextSpan(
-              text: 'PRO\n',
+              text: 'PRO',
               style: TextStyle(
                   fontSize: 40, fontWeight: FontWeight.bold, color: accent),
-            ),
-            TextSpan(
-              text: 'Upped The Game',
-              style: TextStyle(fontSize: 12, color: Colors.grey),
             ),
           ],
         ),

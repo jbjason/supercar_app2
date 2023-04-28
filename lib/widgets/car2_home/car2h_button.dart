@@ -17,6 +17,7 @@ class Car2hButton extends StatelessWidget {
         decoration: const BoxDecoration(
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(80),
+            bottomRight: Radius.circular(40),
           ),
           gradient: LinearGradient(
             begin: Alignment.topLeft,
